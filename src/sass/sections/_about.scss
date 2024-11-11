@@ -18,6 +18,7 @@
     clip-path: none;
   }
 
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -76,4 +77,11 @@
       }
     }
   }
+}
+
+.profile-image {
+  max-width: 100%;  // Ensures the image scales to the container width
+  width: 300px;     // Sets a specific width for the image
+  height: auto;     // Maintains the aspect ratio
+  object-fit: cover;  // Ensures the image covers the container without distortion
 }
